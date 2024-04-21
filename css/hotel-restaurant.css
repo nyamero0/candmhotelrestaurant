@@ -1,13 +1,3 @@
-#cover {
-  background:transparent url("/media/image/cover.jpg") top center / 100% no-repeat;
-}
-#cover-details{
-  min-height:calc(var(--body-h) - (var(--logo-frame-h) - var(--header-h)));
-  display:grid;
-  grid-template-rows:
-    [cd-content] minmax(0, auto) 
-    [cd-nav] minmax(calc(var(--body-h) * 0.166), min-content);
-}
 #cd-content{
   grid-row:cd-content;
   display:inline-block;
