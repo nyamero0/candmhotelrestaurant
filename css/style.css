@@ -1,0 +1,86 @@
+#root{
+    --logo-frame-w:calc(var(--header-h) * 1.78);
+    --logo-frame-h:calc(var(--header-h) * 1.6);
+    
+    --header-nav-hlink-col-gap:calc(0.66vw + 0.6vmin + 2px);
+    --header-nav-pad-x:2vw;
+    --header-font-size:calc(0.44vmax + .75rem);
+
+}
+#cover{
+  color:white;
+}
+#root-header{
+    box-sizing: content-box;
+}
+#page-header {
+    min-height: var(--header-h);
+    font-size:var(--header-font-size);
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    padding-inline: var(--header-pad-x);
+    border-bottom:var(--header-border-b) inset #C7C7C71A;
+}
+
+#root-header::after{
+    content:"";
+    display: block;
+    height:calc(var(--logo-frame-h) - var(--header-h));
+}
+#page-heading{
+    margin-left:calc(var(--header-pad-x) * 0.66);
+    margin-right: auto;
+    min-height:var(--header-content-h);
+    display:flex;
+    position:relative;
+    align-self: stretch;
+    width:var(--logo-frame-w);
+}
+#logo-container{
+    position:absolute;
+    top:0;
+    display:inline-flex;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:var(--logo-frame-h);
+}
+#logo{
+    height:100%;
+    width:100%;
+    
+    aspect-ratio:1;
+    --logo-border-b-radius:calc(0.44vmin + 5px);
+    border-bottom-left-radius:var(--logo-border-b-radius);
+    border-bottom-right-radius:var(--logo-border-b-radius);
+    
+    line-height: normal;
+}
+#header-nav{
+    min-width: 28%;
+    min-height:calc(var(--header-h) / 2);
+    align-self: flex-start;
+    display: inline flex;
+    flex-wrap: wrap;
+    column-gap: var(--header-nav-hlink-col-gap);
+    margin-inline:var(--header-nav-pad-x);
+}
+
+#header-nav a {
+    font-size:calc(1.05em + 0.248vh);
+    display:inline-flex;
+    align-items: center;
+    line-height: normal;
+    font-weight: 100;
+    width: fit-content;
+    padding-inline:calc(1px + 0.44vmin + 0.25vw);
+    padding-block:0.3vh 0.14vh;
+    border-bottom:calc(1px + 0.125vh + 0.125vmin) inset transparent;
+    transition:border 225ms ease-in-out;
+}
+#header-nav a:hover{
+    border-bottom-color: whitesmoke;
+    text-shadow: 0 0 0 rgb(var(--fg-rgb-color));
+}

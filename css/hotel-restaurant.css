@@ -1,0 +1,54 @@
+#cover {
+  background:transparent url("/media/image/cover.jpg") top center / 100% no-repeat;
+}
+#cover-details{
+  min-height:calc(var(--body-h) - (var(--logo-frame-h) - var(--header-h)));
+  display:grid;
+  grid-template-rows:
+    [cd-content] minmax(0, auto) 
+    [cd-nav] minmax(calc(var(--body-h) * 0.166), min-content);
+}
+#cd-content{
+  grid-row:cd-content;
+  display:inline-block;
+  line-height: 0;
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left:var(--header-pad-x);
+}
+#cd-content * {
+  line-height:normal;
+}
+#cd-heading{
+  display:inline-flex;
+  flex-direction: column;
+  font-size:calc(1.4rem + 1.8vh + 1vmin);
+  text-align:left;
+}
+#cd-heading-welcome{
+}
+#cd-heading-strong{
+  margin:0;
+  font-size:1em;
+}
+#cd-heading-restaurant{
+  align-self:flex-end;
+}
+#cd-description{
+  width:min-content;
+  min-width:25%;
+  font-size:calc(0.5vw + 0.8rem);
+  
+}
+#cd-nav{
+  grid-row:cd-nav;
+}
+#booking-nav{
+  display:flex;
+  justify-content: center;
+}
+#general-information{
+  min-height:var(--body-h);
+  display:flex;
+  flex-direction: column;
+}
