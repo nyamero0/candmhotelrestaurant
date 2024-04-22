@@ -1,3 +1,13 @@
+#cover{
+  display: inline-block;
+  line-height: 0;
+  min-width: 100%;
+  position:relative;
+  overflow: initial;
+}
+#cover > * {
+  line-height: normal;
+}
 #cd-content{
   grid-row:cd-content;
   display:inline-block;
@@ -53,7 +63,8 @@ a#booking-btn{
 }
 #general-information{
   margin-top:calc(.75vh + 0.6rem);
-  padding-inline:calc(6px + 8vmin + 4vw);
+  padding-inline:calc(6px + 8vmin + 4vw + 2%);
+  padding-block:calc(6vh + 2vmin + 0.5rem);
   min-height:var(--body-h);
   display:inline-flex;
   flex-direction: column;
@@ -92,11 +103,61 @@ a#booking-btn{
   object-fit: cover;
   max-height:var(--gi-container-h);
 }
+#general-information .general-description{
+  text-align:center;
+}
+.filler-section{
+  width: 100%;
+  height:calc(60vh + 2rem);
+  margin-block:calc(2vh + 0.5rem);
+}
+.filler-section img{
+  width: 100%;
+  height:100%;
+  object-fit: contain;
+}
 #hotel-and-dining{
   display:flex;
   flex-flow:column nowrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  row-gap:calc(10vh);
+  padding-block:20vh;
+}
+#room-image,
+#dining-image{
+  width: 100%;
+  position: relative;
+}
+#hotel,
+#dining
+{
+  height:98.5vh;
+  position: relative;
+}
+#hotel img,
+#dining img
+{
+  height:100%;
+  width: 100%;
+  z-index: 1;
+  object-fit:cover;
+}
+#hotel-and-dining .image-text{
+  position:absolute;
+  top:0;
+  margin-left:auto;
+  margin-right:auto;
+  z-index: 70;
+  width: 100%;
+  text-align: center;
+}
+#hotel-and-dining .image-text h4{
+  display: inline-block;
+  margin: 0;
+  background-color: white;
+  font-size: calc(1.2rem + 1vh);
 }
 #about-us{
   display:flex;

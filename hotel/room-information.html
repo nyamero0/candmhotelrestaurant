@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/restaurant/style.css">
+    <link rel="stylesheet" href="/css/hotel-restaurant.css">
     <script src="/js/htmx.min.js"></script>
     <script src="/js/jquery.min.js" defer></script>
-    <title>C&M Contacts</title>
+    <title>C&M Hotel</title>
 </head>
 <body>
     <div id="root">
+      
         <main role="main" id="root-body">  
-          <div id="cover">
-              <img src="media/image/cover.jpg" alt="Background Cover" id="cover-bg">
+            <div id="cover">
+              <img src="/media/image/cover.jpg" alt="Background Cover" id="cover-bg">
               <header id="root-header">
                 <div id="page-header">
                   <div id="page-heading">
@@ -25,27 +26,29 @@
                     </div>
                   </div>
                 <nav id="header-nav">
-                    <a href="/">Home</a>
+                    <a href="/" id="current-path">Home</a>
                     <a href="/hotel">Hotel</a>
                     <a href="/restaurant">Restaurant</a>
-                    <a href="/contact-us.html" id="current-path">Contact Us</a>
-                    <a href="/#about-us">About Us</a>
+                    <a href="/contact-us.html">Contact Us</a>
+                    <a href="#about-us">About Us</a>
                 </nav>
               </div>
             </header>
             <div id="cover-details">
-                <div id="cd-content">
-                  <div id="cd-heading">
-                    <h1>CONTACT US</h1>
-                  </div>
+              <div id="cd-content">
+                <div id="cd-heading">
+                  <h1 id="cd-heading-strong">LUXURY BED ROOM</h1>
                 </div>
-                    <nav id="cd-nav">
-                    </nav>
+                <div id="cd-description">
+                  Book your stay and enjoy Luxury redefined at the most affortable rates.
+                </div>
+              </div>
+              <nav id="cd-nav">
+                <a href="/href" id="booking-btn">Book Now</a>
+                <div id="scroll-down-desc">Scroll down to see more</div>
+              </nav>
             </div>
-        </div>
-        <div id="page-content">
-
-        </div>
+          </div>
         </main>
     </div>
 </body>
