@@ -1,0 +1,133 @@
+#dining {
+height: calc(100vh - 144px);
+}
+
+
+#dining-text-container {
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: center;
+}
+
+#dining-text {
+  color: whit   e;
+  padding: 5px;
+  border-bottom: 1px solid white;
+  font-size: xx-large;
+}
+
+.filler {
+ height: 747px;
+border-top: 2px solid white;
+border-bottom: 2px solid white;
+}
+
+.images-container {
+  margin-top: calc(4%);
+  height: 85%;
+  justify-content: center;
+  background: url(/media/image/dining2.jpeg);
+  background-position: 25%;
+  background-size: cover;
+}
+
+#main-section {
+  min-height: 100vh;
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.content-container-row {
+  display: flex;
+  min-height: 350px; 
+  margin-bottom: 100px;
+  
+}
+
+.content-container-row:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.image-container {
+  width: 50%;
+}
+
+.text-container {
+  width: 50%;
+  padding: 30px 30px 0 30px;
+}
+
+.text-container h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.text-container p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.text-container .view-book-button {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.view-book-button a {
+  padding: 3px 20px;
+}
+
+.view {
+  border: 1px double white;
+}
+
+.view:hover {
+  background-color: rgb(80, 80, 80);
+  transition: 0.2s;
+}
+
+.view:active {
+  background-color: white;
+  color: black;
+  transition: 0.1s;
+}
+.book {
+  border: 1px double white;
+  color: white;
+  background-color: #1C2143;
+}
+
+.book:hover {
+  background-color: #354084;
+  transition: 0.2s;
+}
+
+.book:active {
+  background-color: #1C2143;
+  color: white;
+  transition: 0.1s;
+}
+
+.first-image {
+  background: url(/media/image/cristoforo1.jpg);
+  background-size: 350px;
+  background-size: cover;
+  background-position: 25%;
+}
+
+.second-image {
+  background: url(/media/image/cristoforo1.jpg);
+  background-size: 350px;
+  background-size: cover;
+  background-position: 25%;
+}
+
+.third-image {
+  background: url(/media/image/cristoforo1.jpg);
+  background-size: 350px;
+  background-size: cover;
+  background-position: 25%;
+}
