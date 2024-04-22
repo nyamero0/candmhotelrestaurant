@@ -14,8 +14,8 @@
 <body>
     <div id="root">
         <main role="main" id="root-body">
-          <div id="home-page">
             <div id="cover">
+              <img src="/media/image/dining.jpg" alt="Restaurant Background" id="cover-bg">
               <header id="root-header">
                 <div id="page-header">
                   <div id="page-heading">
@@ -26,13 +26,68 @@
                 <nav id="header-nav">
                     <a href="/">Home</a>
                     <a href="/hotel">Hotel</a>
-                    <a href="/restaurant">Restaurant</a>
-                    <a href="/menu">Menu</a>
+                    <a href="/restaurant" id="current-path">Restaurant</a>
+                    <a href="/restaurant/menu.html">Menu</a>
+                    <a href="/restaurant/contact-us.html">Contact Us</a>
                 </nav>
               </div>
             </header>
-      </div>
-</div>
+            <div id="cover-details">
+              <div id="cd-content"></div>
+            </div>
+          </div>
+          <div id="dining">
+          </div>
+      
+          <div id="dining-text-container">
+            <h2 id="dining-text">DINING</h2>
+          </div>
+      
+          <section class="filler">
+            <!-- THIS SHOULD BE CAROUSEL -->
+            <div class="images-container"></div>
+          </section>
+        <div id="page-content">
+          <section id="main-section">
+            <div class="content-container-row">
+              <div class="image-container first-image"></div>
+              <div class="text-container">
+                <h3>C&M Restaurant</h3>
+                <p>Our restaurant combines modern elegance with a cozy atmosphere. Enjoy a diverse menu of fresh, globally-inspired dishes. Pair your meal with our curated wine selection for a delightful dining experience. Join us for a memorable culinary journey at "C&M" restaurant.</p>
+                
+                <div class="view-book-button">
+                  <a href="" class="view">View Menu</a>
+                  <a href="" class="book">Book Now</a>
+                </div>
+      
+              </div>
+            </div>
+      
+            <div class="content-container-row">
+              <div class="image-container second-image"></div>
+              <div class="text-container">
+                <h3>Desserts</h3>
+                <p>Delight in decadent desserts, where each creation is a harmonious blend of flavor and elegance, crafted to satisfy the most refined palates.</p>
+                <div class="view-book-button">
+                  <a href="" class="view">View Menu</a>
+                  <a href="" class="book">Book Now</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="content-container-row">
+              <div class="image-container third-image"></div>
+              <div class="text-container">
+                <h3>Culinary</h3>
+                <p>Experience the allure of French international cuisine, a symphony of refined flavors blending tradition and innovation.</p>
+                <div class="view-book-button">
+                  <a href="" class="view">View Menu</a>
+                  <a href="" class="book">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
         </main>
     </div>
 </body>

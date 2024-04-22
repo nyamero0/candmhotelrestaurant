@@ -91,6 +91,7 @@
     flex-wrap: wrap;
     column-gap: var(--header-nav-hlink-col-gap);
     margin-inline:var(--header-nav-pad-x);
+    transition:border linear 100ms;
 }
 
 #header-nav a {
@@ -105,10 +106,21 @@
     border-bottom:calc(1px + 0.125vh + 0.125vmin) inset transparent;
     transition:border 225ms ease-in-out;
 }
+
 #header-nav a:hover{
     border-bottom-color: whitesmoke;
     text-shadow: 0 0 0 rgb(var(--fg-rgb-color));
 }
+
+#current-path{
+    border-bottom-color: whitesmoke!important;
+}
+#header-nav a:not(#current-path):hover ~ #current-path,
+#current-path:has(~ a:hover)
+{
+    border-bottom-color:transparent!important;
+}
+
 #page-content{
   display:flow-root;
 }
