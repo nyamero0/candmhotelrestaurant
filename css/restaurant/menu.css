@@ -19,6 +19,7 @@
     min-height:var(--header-h);
     display: flex;
     justify-content: center;
+    color:#1C2143;
 }
 
 #cover-details{
