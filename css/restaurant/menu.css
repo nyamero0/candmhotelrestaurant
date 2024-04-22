@@ -1,7 +1,32 @@
+#root-header{
+    position: static;
+}
 #root-menu{
-
-    min-height:calc(var(--body-h) - (var(--logo-frame-h) - var(--header-h)));
 }
 #menu{
-    
+    padding-block:2vh 4vh;
+}
+#menu-content{
+    padding-inline:2.5vw;
+    display:grid;
+    grid-template-columns:
+        [main-course] 48% 
+        [menu-line] 4%
+        [desserts] 48%
+    ;
+}
+#menu-heading{
+    min-height:var(--header-h);
+    display: flex;
+    justify-content: center;
+}
+
+#cover-details{
+    min-height: var(--body-h);
+    display: block;
+
+}
+.menu-page{
+    border:calc(2px + 0.02vmin) solid #D2B035;
+    min-height: var(--body-h);
 }

@@ -1,0 +1,96 @@
+#cd-content{
+    grid-row:cd-content;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    margin-top:auto;
+    margin-bottom:auto;
+  }
+  #cd-content * {
+    line-height:normal;
+  }
+  #cd-heading{
+    display:inline-flex;
+    flex-direction: column;
+    font-size:calc(1.4rem + 3vh + 1.5vmin);
+    text-align:left;
+  }
+#cd-heading-strong{
+    margin:0;
+    font-size:1em;
+}
+#cd-heading-restaurant{
+    align-self:flex-end;
+}
+#cd-description{
+    width:min-content;
+    min-width:25%;
+    font-size:calc(0.5vw + 0.8rem); 
+}
+#cd-nav{
+    grid-row:cd-nav;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+a#booking-btn{
+    font-size:calc(1vh + 0.8rem);
+    padding:calc(1vh + 3px) calc(0.44vw + 6px);
+    border:0.05vmin solid grey;
+    background-color:#1C214391;
+    border-radius:calc(0.5vmin + 6px);
+    margin-bottom:auto;
+}
+#scroll-down-desc{
+    margin-top:calc(.5vh + 8px);
+    margin-bottom:calc(0.75vh + 6px);
+}
+#page-content{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+#hotel-rooms{
+    --col-cells:2;
+    
+    display:inline-grid;
+    grid-template-columns: repeat(var(--col-cells), minmax(0, 1fr));
+    column-gap:calc(2vw + 0.5rem);
+    row-gap:calc(2vh + 0.5rem);
+    min-width: 60%;
+}
+.hotel-room{
+    --hotel-room-h:calc(44vh + 14vmin + 1rem);
+    min-height:var(--hotel-room-h);
+    display:grid;
+    grid-template-rows: 
+        [room-title] minmax(0, calc(var(--hotel-room-h) * 0.14))
+        [room-img] calc(var(--hotel-room-h) * 0.66)
+        [room-desc] calc(var(--hotel-room-h) * 0.12)
+        [room-btn] calc(var(--hotel-room-h) * 0.08)
+    ;
+    align-items: center;
+}
+.room-title{
+    text-align: center;
+}
+.room-title h1{
+    margin:0;
+}
+.room-desc{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    text-align: center;
+}
+.room-btn{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width: 1580px) {
+    #hotel-rooms{
+        --col-cells:3;
+    }
+}

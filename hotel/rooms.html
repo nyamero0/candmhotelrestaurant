@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/hotel/rooms.css">
     <script src="/js/htmx.min.js"></script>
     <script src="/js/jquery.min.js" defer></script>
     <title>C&M Hotel</title>
@@ -15,7 +16,9 @@
     <div id="root">
         <main role="main" id="root-body">
           <div id="cover">
-              <img src="/media/image/aa.jpg" alt="Cover Background" id="cover-bg">
+              <!-- Cover Background -->
+              <img src="/media/image/roombackground.jpg" alt="Cover Background" id="cover-bg">
+              <!-- Page Header -->
               <header id="root-header">
                 <div id="page-header">
                   <div id="page-heading">
@@ -30,43 +33,91 @@
                   </nav>
                 </div>
               </header>
-              <div id="cover-details">
+              <!-- End Page Header -->
 
+              <div id="cover-details">
+                <div id="cd-content">
+                  <div id="cd-heading">ROOMS</div>
+                </div>
+                <nav id="cd-nav">
+                  <a href="/hotel/reservation.html" id="booking-btn">Book Now</a>
+                </nav>
               </div>
           </div>
-          <section id="hotel-slider">
-          <div id="slider">
-            <ul>
-              <li style="order:0">
-                <img src="" alt="Hotel Building">
-              </li>
-              <li>
-                <img src="" alt="Hotel Room">
-              </li>
-            </ul>
+          <div id="page-content">
+            <section i="rooms-and-rates">
+              <h1 id="rar-heading">ROOMS AND RATES</h1>
+              <p id="rar-desc">Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes, 
+                comfort isn’t our only objective, we also value good design, sleek contemporary furnishing complemented 
+                by the rich tones of nature’s palette as visible from our rooms’ sea-view windows and terraces. </p>
+            </section>
+            <section id="hotel-rooms">
+              <div class="hotel-room">
+                <div class="room-title">
+                  <h1>Luxury Bed Room</h1>
+                </div>
+                <div class="room-img">
+                  <img src="" alt="">
+                </div>
+                <div class="room-desc">
+                  <div class="room-size">32</div>
+                  <div class="room-guest">2</div>
+                  <div class="room-bed">1</div>
+                </div>
+                <div class="room-btn">
+                  <button>Explore</button>
+                </div>
+              </div>
+              <div class="hotel-room">
+                <div class="room-title">
+                  <h1>Luxury Bed Room</h1>
+                </div>
+                <div class="room-img">
+                  <img src="" alt="">
+                </div>
+                <div class="room-desc">
+                  <div class="room-size">32</div>
+                  <div class="room-guest">2</div>
+                  <div class="room-bed">1</div>
+                </div>
+                <div class="room-btn">
+                  <button>Explore</button>
+                </div>
+              </div>
+              <div class="hotel-room">
+                <div class="room-title">
+                  <h1>Luxury Bed Room</h1>
+                </div>
+                <div class="room-img">
+                  <img src="" alt="">
+                </div>
+                <div class="room-desc">
+                  <div class="room-size">32</div>
+                  <div class="room-guest">2</div>
+                  <div class="room-bed">1</div>
+                </div>
+                <div class="room-btn">
+                  <button>Explore</button>
+                </div>
+              </div>
+              <div class="hotel-room">
+                <div class="room-title">
+                  <h1>Luxury Bed Room</h1>
+                </div>
+                <div class="room-img">
+                  <img src="" alt="">
+                </div>
+                <div class="room-desc">
+                  <div class="room-size">32</div>
+                  <div class="room-guest">2</div>
+                  <div class="room-bed">1</div>
+                </div>
+                <div class="room-btn">
+                  <button>Explore</button>
+                </div>
+              </div>
+            </section>
           </div>
-        </section>
-        <section id="general-information">
-          
-          <div class="hotel-info">
-            <div class="info-img">
-              <img src="" alt="">
-            </div>
-            <div class="info-desc">
-              <h1 class="info-heading">Menu</h1>
-              <span>Our menu is crafted to transport you into a world of culinary delight. Let go of the ordinary and indulge in a private paraise of exquisite flavor</span>
-            </div>
-          </div>
-          <div class="hotel-info">
-            <div class="info-img">
-              <img src="" alt="">
-            </div>
-            <div class="info-desc">
-              <h1 class="info-heading">Dining</h1>
-              <span>Our rooms are designed to transport you into an environment made for leisure.Take your mind off the day-to-day of homelife and find a private paradise for yourself.</span>
-            </div>
-          </div>
-        </section>
         </main>
         <footer id="root-footer">
           
