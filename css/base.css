@@ -3,7 +3,7 @@
 }
 :root{
     --header-border-b: 0.1vmin;
-    --header-h: calc(7.64vmin + .9rem + 1.55vh + 0.5vmax);
+    --header-h: calc(7.72vmin + 1.44rem + 1.125vh);
     --header-content-h:calc(var(--header-h) - var(--header-border-b));
     --header-pad-x:calc(3.8vw + 2vmin);
     
@@ -11,8 +11,8 @@
     --full-h: 100vh;
     --footer-h : calc(22vmin + 2vh + .25rem);
 
-    --bg-rgb-color:32, 38, 40;
-    --fg-rgb-color:220, 220, 220;
+    --bg-rgb-color:250, 250, 250;
+    --fg-rgb-color:14, 14, 14;
 }
 @media screen and (prefers-color-scheme:dark) {
     :root{

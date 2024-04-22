@@ -15,8 +15,6 @@
   font-size:calc(1.4rem + 1.8vh + 1vmin);
   text-align:left;
 }
-#cd-heading-welcome{
-}
 #cd-heading-strong{
   margin:0;
   font-size:1em;
@@ -27,18 +25,58 @@
 #cd-description{
   width:min-content;
   min-width:25%;
-  font-size:calc(0.5vw + 0.8rem);
-  
+  font-size:calc(0.5vw + 0.8rem); 
 }
 #cd-nav{
   grid-row:cd-nav;
-}
-#booking-nav{
   display:flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+a#booking-btn{
+  font-size:calc(1vh + 0.8rem);
+  padding:calc(1vh + 3px) calc(0.44vw + 6px);
+  border:0.05vmin solid grey;
+  background-color:#1C214391;
+  border-radius:calc(0.5vmin + 6px);
+  margin-bottom:auto;
+}
+#scroll-down-desc{
+  margin-top:calc(.5vh + 8px);
+  margin-bottom:calc(0.75vh + 6px);
 }
 #general-information{
+  margin-top:calc(.75vh + 0.6rem);
   min-height:var(--body-h);
   display:flex;
   flex-direction: column;
+  justify-content:flex-start;
+  align-items:center;
+}
+#general-information > .gi-container{
+  display:inline-flex;
+}
+#general-information > .gi-container:nth-child(odd){
+  flex-flow:row-reverse;
+}
+#general-information > .gi-container > .gi-img,
+#general-information > .gi-container > .gi-desc
+{
+  min-height:calc(20vh + 2rem);
+  flex:1 0 50%;
+  max-width:50%;
+  display:inline-block;
+}
+#hotel-and-dining{
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#about-us{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
