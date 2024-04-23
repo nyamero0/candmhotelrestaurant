@@ -108,7 +108,7 @@
     height:100%;
     width: 100%;
     flex:0 0 100%;
-
+    transition:all 200ms linear;
 }
 #slider img{
     height:100%;

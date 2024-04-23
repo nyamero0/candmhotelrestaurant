@@ -111,6 +111,8 @@ a#booking-btn{
 }
 #general-information .general-description{
   text-align:center;
+  font-size:calc(1rem + 0.75vh);
+  margin-block:3.3vh 7.5vh;
 }
 .filler-section{
   width: 100%;
@@ -171,14 +173,17 @@ a#booking-btn{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding-block:5vh;
 }
-
+#about-us-text h2{
+  font-size:calc(1.33rem + 2vh);
+}
 #about-us-container{
   display:inline-flex;
   padding-inline:var(--header-pad-x) ; 
 }
 #about-us-picture{
-  max-width: 50%;
+  max-width: 48%;
 }
 #about-us-picture img{
   height:calc(42vh + 3rem);
@@ -188,6 +193,7 @@ a#booking-btn{
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
+  padding-inline:calc(2vw + 2%);
 }
 #about-us-desc p{
   width: min-content;
