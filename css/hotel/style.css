@@ -21,7 +21,8 @@
   }
   #cd-heading-strong{
     margin:0;
-    font-size:1em;
+    font-size:calc(1em + 0.55rem + 1.25vh);
+    word-spacing:clamp(4px, 0.6vmin ,2vw);
   }
   #cd-heading-restaurant{
     align-self:flex-end;
@@ -30,6 +31,7 @@
     width:min-content;
     min-width:25%;
     font-size:calc(0.5vw + 0.8rem); 
+    font-weight: lighter;
   }
   #cd-nav{
     grid-row:cd-nav;
@@ -40,14 +42,47 @@
   }
   #booking-form{
     margin-bottom:auto;
-
   }
-  a#booking-btn{
+  #form-inputs{
+    display: inline-flex;
+  }
+  #search-bar{
+    display:flex;
+    align-items: center;
+    margin-inline:calc(4px + 0.5vw);
+    column-gap:calc(4px + 0.25vw);
+  }
+  
+  #search-bar button,
+  a#booking-btn
+  {
     font-size:calc(1vh + 0.8rem);
     padding:calc(1vh + 3px) calc(0.44vw + 6px);
     border:0.05vmin solid grey;
     background-color:#1C214391;
     border-radius:calc(0.5vmin + 6px);
+  }
+  #search-bar button{
+    font-family: unset;
+    color:white;
+    padding:calc(0.75vh + 3px) calc(0.33vw + 5px);
+}
+#people{
+    display: flex;
+    column-gap:5px;
+    font-size:calc(0.86rem + 1.125vh);
+    align-items: center;
+  }
+  #p-input {
+    background-color:#1C214391;
+    border-radius:calc(0.5vmin + 5px);
+    border:0.05vmin solid grey;
+    padding-block:calc(2px + 0.5vh);
+    min-height:calc(0.8rem + 1.2vh);
+    font-size:calc(0.75rem + 1vh);
+    text-align: center;
+    width:4vw;
+    color:inherit;
   }
   #hotel-slider{
     display:flex;

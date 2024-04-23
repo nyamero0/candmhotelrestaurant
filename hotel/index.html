@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/hotel/style.css">
     <script src="/js/htmx.min.js"></script>
     <script src="/js/jquery.min.js" defer></script>
+    <script src="/js/hotel/script.js" defer></script>
     <title>C&M Hotel</title>
 </head>
 <body>
@@ -36,7 +37,7 @@
               <div id="cover-details">
                 <div id="cd-content">
                   <div id="cd-heading">
-                    <span>Welcome to</span>
+                    <span>welcome to</span>
                     <span id="cd-heading-strong">C&M HOTEL</span>
                   </div>
                   <div id="cd-description">
@@ -47,7 +48,14 @@
                   <form action="GET" method="/rooms.html" id="booking-form">
                     <div id="form-desc"></div>
                     <div id="form-inputs">
-                      <a href="/book" id="booking-btn">Book</a>
+                      <a href="/book" id="booking-btn">Book Now</a>
+                      <div id="search-bar">
+                        <div id="people">
+                          <label for="people">People</label>
+                          <input type="number" name="people" id="p-input" min="1" value="1" max="10" size="2">
+                        </div>
+                        <button type="submit">Search</button>
+                      </div>
                     </div>
                   </form>
                   <div id="scroll-down-desc">
@@ -59,17 +67,25 @@
           <section id="hotel-slider">
           <div id="slider">
             <ul>
-              <li style="order:0">
+              <li>
                 <img src="/media/image/hotelBuilding.jpg" alt="Hotel Building">
               </li>
-              <li>
+              <li style="order:0">
                 <img src="/media/image/room1.jpg" alt="Hotel Room">
               </li>
             </ul>
           </div>
         </section>
         <section id="general-information">
-          
+          <div class="hotel-info">
+            <div class="info-img">
+              <img src="/media/image/room3.jpg" alt="">
+            </div>
+            <div class="info-desc">
+              <h1 class="info-heading">Luxury Rooms</h1>
+              <span>Our rooms are designed to transport you into an environment mae for leisure. Take your mind off the day-to-day of home life nad find a private paradise for yourself.</span>
+            </div>
+          </div>
           <div class="hotel-info">
             <div class="info-img">
               <img src="/media/image/aa.jpg" alt="">
@@ -91,7 +107,7 @@
         </section>
         </main>
         <footer id="root-footer">
-          
+          <div id="page-footer"></div>
         </footer>
     </div>
 </body>
