@@ -26,9 +26,13 @@
     min-height: var(--body-h);
     display: block;
 }
+#menu-heading{
+    min-width: var(--header-h);
+
+}
 .menu-page{
     border:calc(2px + 0.02vmin) solid #D2B035;
-    min-height: var(--body-h);
+    min-height: calc(var(--body-h));
 }
 #menu ul {
     list-style: none;

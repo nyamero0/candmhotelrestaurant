@@ -2,3 +2,122 @@
     object-fit: cover;
     object-position: top;
 }
+#cd-content{
+    grid-row:cd-content;
+    display:inline-block;
+    line-height: 0;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:var(--header-pad-x);
+  }
+  #cd-content * {
+    line-height:normal;
+  }
+  #cd-heading{
+    display:inline-flex;
+    flex-direction: column;
+    font-size:calc(1.4rem + 1.8vh + 1vmin);
+    text-align:left;
+  }
+  #cd-heading-strong{
+    margin:0;
+    font-size:1em;
+  }
+  #cd-heading-restaurant{
+    align-self:flex-end;
+  }
+  #cd-description{
+    width:min-content;
+    min-width:25%;
+    font-size:calc(0.5vw + 0.8rem); 
+  }
+  #cd-nav{
+    grid-row:cd-nav;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #booking-form{
+    margin-bottom:auto;
+
+  }
+  a#booking-btn{
+    font-size:calc(1vh + 0.8rem);
+    padding:calc(1vh + 3px) calc(0.44vw + 6px);
+    border:0.05vmin solid grey;
+    background-color:#1C214391;
+    border-radius:calc(0.5vmin + 6px);
+  }
+  #hotel-slider{
+    display:flex;
+    flex-flow:column wrap;
+    padding-block:calc(10vh + 1rem);
+    
+}
+#slider{
+    border-block:0.1vmin solid transparent;
+    box-sizing: content-box;
+    padding-block:2vh;
+}
+#slider ul {
+    height:90vh;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-flow:row nowrap;
+    list-style: none;
+    overflow: hidden;
+}
+#slider ul li {
+    height:100%;
+    width: 100%;
+    flex:0 0 100%;
+
+}
+#slider img{
+    height:100%;
+    width:100%;
+    object-fit: contain;
+    backdrop-filter: blur(6px) brightness(98%) contrast(90%);
+}
+#general-information{
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    justify-content: flex-start;
+    row-gap:calc(7.5vmin + 1rem);
+    padding-block:10vh;
+}
+.hotel-info{
+    width:75%;
+    --info-img-h:36.5vw;
+    max-height:max(var(--info-img-h));
+    outline:0.01vmin;
+    display: inline-grid;
+    column-gap:calc(3% + 2vw);
+    grid-template-columns: [info-img] var(--info-img-h) [info-desc] 1fr;
+}
+.info-img{
+    grid-column: info-img;
+    display:inline-flex;
+    align-items: center;
+    justify-content:center;
+    filter:brightness(110%);
+}
+.info-img img{
+    height:100%;
+    max-width:100%;
+}
+.info-desc{
+    grid-column: info-desc;
+    padding-inline:calc(1.25vw + 0.33rem) calc(1vw + 0.25rem);
+    padding-block:calc(var(--info-img-h) * .1125) 4vh;
+    text-align: left;
+}
+.info-desc h1 {
+    font-size:calc(1rem + 2vmin);
+}
+.info-desc span{
+    font-size:calc(.7rem + 1.25vmin);
+}
