@@ -63,30 +63,35 @@ a#booking-btn{
 }
 #general-information{
   margin-top:calc(.75vh + 0.6rem);
-  padding-inline:calc(6px + 8vmin + 4vw + 2%);
+  --gi-pad-x:calc(6px + 8vmin + 4vw + 2%);
   padding-block:calc(6vh + 2vmin + 0.5rem);
   min-height:var(--body-h);
-  display:inline-flex;
-  flex-direction: column;
-  justify-content:flex-start;
-  align-items:stretch;
+  display: grid;
+  grid-template-columns: minmax(0,var(--gi-pad-x)) [gi-content] auto minmax(0, var(--gi-pad-x));
   --gi-container-h:calc(36vh + 10vmin + 6rem);
   line-height: 0;
 }
 #general-information > * {
   line-height:normal;
 }
-#general-information > .gi-container{
+#gi-content{
+  grid-area: gi-content;
+  display:inline-flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items:stretch;
+}
+#general-information  .gi-container{
   display:inline-flex;
   min-height: var(--gi-container-h);
   column-gap:calc(2vw + 0.5rem);
   font-size:calc(.8vmin + .9rem);
 }
-#general-information > .gi-container:nth-child(odd){
+#general-information  .gi-container:nth-child(odd){
   flex-flow:row-reverse;
 }
-#general-information > .gi-container > .gi-img,
-#general-information > .gi-container > .gi-desc
+#general-information  .gi-container  .gi-img,
+#general-information  .gi-container  .gi-desc
 {
   min-height:inherit;
   flex:1 1 auto;
@@ -95,10 +100,10 @@ a#booking-btn{
   flex-direction: column;
   justify-content: center;
 }
-#general-information > .gi-container > .gi-desc {
+#general-information  .gi-container  .gi-desc {
   padding-inline:var(--header-pad-x);
 }
-#general-information > .gi-container > .gi-img img{
+#general-information  .gi-container  .gi-img img{
   min-height:inherit;
   object-fit: cover;
   max-height:var(--gi-container-h);
@@ -164,4 +169,25 @@ a#booking-btn{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+#about-us-container{
+  display:inline-flex;
+  padding-inline:var(--header-pad-x) ; 
+}
+#about-us-picture{
+  max-width: 50%;
+}
+#about-us-picture img{
+  height:calc(42vh + 3rem);
+}
+#about-us-desc{
+  font-size:calc(1.44vh + 0.44rem);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#about-us-desc p{
+  width: min-content;
+  min-width: 33vw;
 }

@@ -14,6 +14,7 @@
         [menu-line] 4%
         [desserts] 48%
     ;
+    color:#020406;
 }
 #menu-heading{
     min-height:var(--header-h);
@@ -21,13 +22,29 @@
     justify-content: center;
     color:#1C2143;
 }
-
 #cover-details{
     min-height: var(--body-h);
     display: block;
-
 }
 .menu-page{
     border:calc(2px + 0.02vmin) solid #D2B035;
     min-height: var(--body-h);
+}
+#menu ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.food-name,
+.food-desc
+{
+    margin:0;
+}
+#menu h2 {
+    text-align: center;
+    font-size:calc(1vh + 1.1rem);
+}
+#menu .food-desc{
+    width: min-content;
+    min-width: 60%;
 }
